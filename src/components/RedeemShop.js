@@ -86,7 +86,7 @@ function RedeemShop({ currentUser }) {
                       onClick={() => handleRedeem(item)}
                     >
                       <div className="item-image">
-                        <img src={`/images/${item.image}`} alt={item.name} />
+                        <img src={`images/${item.image}`} alt={item.name} />
                       </div>
                       <div className="item-name">{item.name}</div>
                       <div className="item-description">{item.description}</div>
@@ -107,7 +107,7 @@ function RedeemShop({ currentUser }) {
               <h3>Confirm Redeem</h3>
               <div className="confirm-item">
                 <div className="confirm-image">
-                  <img src={`/images/${selectedItem.image}`} alt={selectedItem.name} />
+                  <img src={`images/${selectedItem.image}`} alt={selectedItem.name} />
                 </div>
                 <div>
                   <div className="confirm-name">{selectedItem.name}</div>
