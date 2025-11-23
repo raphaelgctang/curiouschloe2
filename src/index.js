@@ -32,7 +32,7 @@ const backgroundImages = [
 
 function getRandomBackground() {
   const randomIndex = Math.floor(Math.random() * backgroundImages.length);
-  return `/images/backgrounds/${backgroundImages[randomIndex]}`;
+  return `images/backgrounds/${backgroundImages[randomIndex]}`;
 }
 
 const randomBackground = getRandomBackground();
