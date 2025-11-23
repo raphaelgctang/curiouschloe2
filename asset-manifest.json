@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/curiouschloe2/static/css/main.5b3ddb53.css",
-    "main.js": "/curiouschloe2/static/js/main.1a8f7225.js",
+    "main.js": "/curiouschloe2/static/js/main.d88be061.js",
     "index.html": "/curiouschloe2/index.html",
     "main.5b3ddb53.css.map": "/curiouschloe2/static/css/main.5b3ddb53.css.map",
-    "main.1a8f7225.js.map": "/curiouschloe2/static/js/main.1a8f7225.js.map"
+    "main.d88be061.js.map": "/curiouschloe2/static/js/main.d88be061.js.map"
   },
   "entrypoints": [
     "static/css/main.5b3ddb53.css",
-    "static/js/main.1a8f7225.js"
+    "static/js/main.d88be061.js"
   ]
 }
