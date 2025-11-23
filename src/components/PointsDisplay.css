@@ -1,0 +1,28 @@
+.points-display {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.points-badge {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  min-width: 120px;
+}
+
+.points-label {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.9;
+  margin-bottom: 4px;
+}
+
+.points-value {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

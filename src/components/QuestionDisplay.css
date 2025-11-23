@@ -1,0 +1,68 @@
+.question-display-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  padding: 20px;
+}
+
+.question-card-centered {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+  border-left: 6px solid #4ecdc4;
+}
+
+.question-text-centered {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.question-date-centered {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* When there are multiple questions (after answering) */
+.questions-list-container {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.questions-list-container h3 {
+  color: #4ecdc4;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.question-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border-left: 4px solid #4ecdc4;
+}
+
+.question-text {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.question-date {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: right;
+}

@@ -1,0 +1,50 @@
+.answer-input-container {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.answer-input-container textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #4ecdc4;
+  border-radius: 10px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s ease;
+  font-family: inherit;
+}
+
+.answer-input-container textarea:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+.answer-input-container textarea:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.answer-input-container button {
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.answer-input-container button:hover:not(:disabled) {
+  background: #3dbeb5;
+  transform: translateY(-1px);
+}
+
+.answer-input-container button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}

@@ -1,38 +1,61 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* No scrolling when no answers */
+.App.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Allow scrolling when answers appear */
+.App.allow-scroll {
+  overflow: auto;
+  min-height: 100vh;
+}
+
+/* Add this to your App.css or main CSS file */
+.archive-button-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: flex-end !important;
+  height: 100% !important;
+}
+
+.archive-button-container, .redeem-button-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: auto !important;         /* Allow natural width */
+  min-width: 180px !important;    /* But set a minimum */
+}
+
+.archive-button, .redeem-button {
+  margin-bottom: 8px !important;
+}
+
+.archive-description, .redeem-description {
+  margin: 8px 0 0 0 !important;
+  font-size: 0.85rem !important;
+  color: #666 !important;
+  text-align: center !important;
+  line-height: 1.3 !important;
+  max-width: 250px !important;    /* Limit description width */
+}
+
+.archive-button, .redeem-button {
+  min-width: 180px !important;    /* Minimum width */
+  height: 50px !important;        /* Same height */
+  white-space: nowrap !important;
+  padding: 12px 24px !important;
+  font-size: 1rem !important;
+  width: auto !important;         /* Allow natural width */
+}
+
+.App h1 {
+  font-family: 'Brush Script MT', cursive !important;
+  font-size: 2.5rem !important;
+  color: #e84393 !important; /* Darker pink */
 }

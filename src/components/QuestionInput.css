@@ -1,0 +1,69 @@
+.question-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Much bigger - takes most of screen */
+  padding: 20px;
+}
+
+.question-input-container > div {
+  text-align: center;
+  width: 100%;
+  max-width: 1000px; /* Much wider */
+}
+
+.question-input-container h3 {
+  color: black;
+  margin-bottom: 40px; /* More spacing */
+  font-size: 2.5rem; /* Much bigger text */
+  font-weight: 600;
+  font-family: 'Lucida Calligraphy', cursive !important;
+
+}
+
+.question-input-container textarea {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+  padding: 30px; /* More padding */
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  font-size: 1.5rem; /* Bigger text */
+  resize: vertical; 
+  transition: all 0.3s ease;
+  font-family: inherit;
+  min-height: 10px; /* Much taller */
+  max-height: 40px;
+  background: white;
+  opacity: 0.5;
+  line-height: 1.6;
+}
+
+.question-input-container textarea:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.2);
+  transform: scale(1.02);
+}
+
+.question-input-container button {
+  background: #ff6b6b;  
+  color: white;
+  border: none;
+  padding: 20px 60px; /* Bigger button */
+  border-radius: 30px;
+  font-size: 1.5rem; /* Bigger text */
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 30px; /* More spacing */
+  transition: all 0.3s ease;
+  width: auto;
+  min-width: 250px;
+  font-family: 'Fira Code', monospace !important;
+}
+
+.question-input-container button:hover:not(:disabled) {
+  background: #ff5252;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
+}

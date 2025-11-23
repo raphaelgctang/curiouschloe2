@@ -1,0 +1,113 @@
+.archive-container {
+  position: fixed;
+  bottom: 30px;    /* Same as redeem button */
+  right: 400px;    /* Adjust based on where you want it */
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.archive-container h3 {
+  color: #4ecdc4;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.sort-controls {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sort-controls label {
+  margin-right: 10px;
+  color: #666;
+}
+
+.sort-controls select {
+  padding: 8px 12px;
+  border: 2px solid #4ecdc4;
+  border-radius: 8px;
+  background: white;
+  color: #333;
+}
+
+.archive-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.archive-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.archive-question {
+  padding: 15px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.archive-question:hover {
+  background: #e9ecef;
+}
+
+.question-text {
+  font-weight: 500;
+  color: #333;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.question-meta {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.date {
+  color: #888;
+}
+
+.rating {
+  color: #ff6b6b;
+  font-weight: 500;
+}
+
+.points {
+  color: #4ecdc4;
+  font-weight: bold;
+}
+
+.expand-icon {
+  font-weight: bold;
+  color: #333;
+}
+
+.archive-answer {
+  padding: 15px;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.answer-label {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.answer-text {
+  color: #333;
+  font-style: italic;
+  line-height: 1.4;
+  margin: 0;
+}

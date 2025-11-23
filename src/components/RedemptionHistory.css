@@ -1,0 +1,153 @@
+.redemption-history {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  height: 500px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  top: -150px; /* Move the entire container UP */
+  opacity: 50%;
+}
+
+.redemption-history h3 {
+  color: #4ecdc4;
+  margin-bottom: 15px;
+  text-align: center;
+  flex-shrink: 0;
+  padding: 0;
+  margin: 0 0 15px 0;
+  height: auto; /* Ensure title doesn't take too much space */
+}
+
+.redemption-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 10px;
+  margin: 0;
+  padding-bottom: 10px; /* Add bottom padding so last item isn't cut off */
+}
+
+/* Ensure the list can scroll to the very bottom */
+.redemption-list::after {
+  content: '';
+  height: 1px;
+  flex-shrink: 0;
+}
+
+.redemption-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border-left: 4px solid #ff6b6b;
+  flex-shrink: 0;
+  min-height: 90px; /* Ensure consistent height */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.redemption-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.redemption-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.redemption-details {
+  flex: 1;
+}
+
+.redemption-name {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.redemption-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.redemption-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Custom scrollbar */
+.redemption-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.redemption-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.redemption-list::-webkit-scrollbar-thumb {
+  background: #4ecdc4;
+  border-radius: 10px;
+}
+
+.redemption-list::-webkit-scrollbar-thumb:hover {
+  background: #3bb4ac;
+}
+
+.show-more-btn {
+  margin-top: 15px;
+  position: sticky;
+  bottom: 10px;
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.completed-btn {
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.completed-btn:hover {
+  background: #3bb4ac;
+  transform: translateY(-2px);
+}
+
+.completed-btn:active {
+  transform: translateY(0);
+}
+
+.redemption-details {
+  flex: 1;
+  margin-right: 15px; /* Space between details and button */
+}
