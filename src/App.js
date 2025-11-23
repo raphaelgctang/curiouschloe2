@@ -15,6 +15,7 @@ function App() {
   const [dataVersion, setDataVersion] = useState(0);
   const [hasAnswers, setHasAnswers] = useState(false);
   const [questions, setQuestions] = useState([]);
+  console.log(questions);  // This "uses" the variable
 
   // In your App.js, add this useEffect
 useEffect(() => {
