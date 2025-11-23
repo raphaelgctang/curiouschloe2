@@ -40,7 +40,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./build  # ← This is the key change!
+        path: ./build
 
   deploy:
     environment:
