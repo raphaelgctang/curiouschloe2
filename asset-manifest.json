@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/curiouschloe2/static/css/main.5b3ddb53.css",
+    "main.js": "/curiouschloe2/static/js/main.f7128d5f.js",
+    "index.html": "/curiouschloe2/index.html",
+    "main.5b3ddb53.css.map": "/curiouschloe2/static/css/main.5b3ddb53.css.map",
+    "main.f7128d5f.js.map": "/curiouschloe2/static/js/main.f7128d5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b3ddb53.css",
+    "static/js/main.f7128d5f.js"
+  ]
+}
